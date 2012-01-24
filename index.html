@@ -2,13 +2,27 @@
 <html>
 	<head>
 		<link type="text/css" src="css/bootstrap.min.css" />
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<link type="text/css" src="css/colorbox.css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("a[rel='videolink']").colorbox({
+					//width:"600px",
+					//inline:true,
+					href:function(){
+    					var elementID = "video";
+    					return elementID;
+					}
+				}); 
+			});
+		</script>
 		<title>Resume</title>
 	</head>
 	<body>
 		<div class="container" id="page">
 			<div class="span16">
-				Button here
+				<a href="#" rel="videolink"><img src="/images/movies.png" alt="Video Resume" /></a>
 			</div>
 		</div>
 		<div id="video" style="display:none">
