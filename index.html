@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link type="text/css" src="css/bootstrap.min.css" />
-		<link type="text/css" src="css/colorbox.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/colorbox.css" />
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
 		<script type="text/javascript">
 			$(function(){
 				$("a[rel='videolink']").colorbox({
 					//width:"600px",
-					inline: true,
-					href: '#video'
+					//inline: true,
+					//href: '#video'
+					html: 'Video here'
 				}); 
 			});
 		</script>
@@ -21,9 +22,6 @@
 			<div class="span16">
 				<a href="#" rel="videolink"><img src="images/movies.png" alt="Video Resume" /></a>
 			</div>
-		</div>
-		<div id="video" style="display:none">
-			Video Code Here
 		</div>
 	</body>
 </html>
